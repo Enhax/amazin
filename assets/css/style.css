@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+
+body{
+    background-color: #dadada;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #131921;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-country{
+    display: flex;
+    align-items: end;
+    margin-left:15px;
+    font-size: 13px;
+    color:#c4c4c4;
+}
+
+.nav-country h1{
+    font-size: 14px;
+    color:#fff;
+}
+
+.nav-search{
+    
+}
