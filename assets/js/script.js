@@ -46,3 +46,11 @@ nextSlideButton.addEventListener('click', () => {
     showSlide(slideIndex);
     intervalId = setInterval(nextSlide, 5000);
 });
+
+const scrollContainer = document.querySelectorAll('.products');
+for(const item of scrollContainer){
+    item.addEventListener('wheel', (event)=>{
+        event.preventDefault();
+        item.scrollLeft += event.deltaY;
+    })
+}
