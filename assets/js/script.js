@@ -33,19 +33,24 @@ function nextSlide() {
     showSlide(slideIndex);
 }
 
-prevSlideButton.addEventListener('click', () => {
-    clearInterval(intervalId);
-    slideIndex--;
-    showSlide(slideIndex);
-    intervalId = setInterval(nextSlide, 5000);
-});
+if(prevSlideButton != null){
+    prevSlideButton.addEventListener('click', () => {
+        clearInterval(intervalId);
+        slideIndex--;
+        showSlide(slideIndex);
+        intervalId = setInterval(nextSlide, 5000);
+    });
+}
 
-nextSlideButton.addEventListener('click', () => {
-    clearInterval(intervalId);
-    slideIndex++;
-    showSlide(slideIndex);
-    intervalId = setInterval(nextSlide, 5000);
-});
+if(nextSlideButton != null){
+    nextSlideButton.addEventListener('click', () => {
+        clearInterval(intervalId);
+        slideIndex++;
+        showSlide(slideIndex);
+        intervalId = setInterval(nextSlide, 5000);
+    });
+    
+}
 
 const scrollContainer = document.querySelectorAll('.products');
 for(const item of scrollContainer){
