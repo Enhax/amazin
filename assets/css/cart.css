@@ -81,3 +81,30 @@
     font-size: 13px;
     margin: 7px 0;
 }
+
+.cart-list-action{
+    display: flex;
+    gap: 12px;
+    font-size: 14px;
+    color: #007185;
+}
+
+
+.cart-list-action hr{
+    height: 20px;
+    width: 1px;
+    background: #cfcfcf;
+}
+
+.cart-list-action select{
+    padding: 5px;
+    border-radius: 6px;
+    background: #f3f3f3;
+}
+
+.cart-list-subtotal{
+    text-align: right;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
