@@ -160,3 +160,22 @@ footer .footer-links a{
     text-decoration: none;
     color:#0066c0;
 }
+
+
+/* ---------- Media query ---------- */
+
+@media only screen and (max-width: 900px) {
+    
+    footer{
+        position: relative;
+    }
+
+    .footer-links{
+        flex-direction: column;
+    }
+
+    .signin-container, .signin-bottom, .signin-signup-btn{
+        width: 90%;
+    }
+
+}
